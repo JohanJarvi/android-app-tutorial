@@ -29,6 +29,7 @@ public class SecondFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         assert getArguments() != null;
+        
         int count = SecondFragmentArgs.fromBundle(getArguments()).getMyArg();
         String countText = getString(R.string.random_heading, count);
         TextView headerView = view.getRootView().findViewById(R.id.textview_header);
